@@ -11,7 +11,7 @@ SERVER_PASSWORD=${SERVER_PASSWORD:-secret}
 SERVER_WORLD=${SERVER_WORLD:-Dedicated}
 
 # start the valheim server
-cd /root/valheim/data && ./valheim_server.x86_64 -name "${SERVER_NAME}" -console +port 2456 -world "${SERVER_WORLD}}" -password "${SERVER_PASSWORD}" -public 1 > /dev/null &
+cd /root/valheim/data && ./valheim_server.x86_64 -name "${SERVER_NAME}" -console +port 2456 -world "${SERVER_WORLD}" -password "${SERVER_PASSWORD}" -public 1 > /dev/null &
 
 export LD_LIBRARY_PATH=$templdpath
 
